@@ -1,0 +1,70 @@
+.header{
+    height: 30px;
+    width: 100%;
+
+    @include sp{
+        height: 20px;
+    }
+}
+
+.header-inner{
+    display: flex;
+    justify-content: center;
+    @include sp{
+        flex-direction: column;
+    }
+}
+
+.annotation{
+    margin: 0 auto;
+    color: #ca1d1d;
+    font-size: 1.4rem;
+    max-width: 500px;
+    @include sp{
+        font-size: 1.2rem;
+    }
+}
+
+.header-head{
+    font-size: 6.7rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 30px;
+    font-family: $font-nic;
+    color: #cc9966;
+    @include sp{
+        font-size: 5.5rem;
+        margin: 20px 0 ;
+    }
+}
+
+.header-date{
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-top: 30px;
+    color: #cc9966;
+    @include sp{
+        margin-top: 0;
+        font-size: 1.6rem;
+    }
+    .a{
+        display: inline-block;
+        margin-top: 10px;
+        font-size: 5rem;
+        color: #cc9966;
+        @include sp{
+            font-size: 4rem;
+            margin-top: 0;
+        }
+    }
+    .b{
+        width: 40px;
+        height: 40px;
+        background: rgb(202, 54, 27);
+        border-radius: 50%;
+        display: inline-block;
+        padding-top: 10px;
+        color: white;
+    }
+}

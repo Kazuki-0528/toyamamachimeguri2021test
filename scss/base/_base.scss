@@ -1,0 +1,38 @@
+  
+.pc{
+    @include sp{
+      display: none;
+    }
+  }
+  
+  .sp{
+    @include pc{
+      display: none;
+    }
+  }
+  
+  html{
+    font-size: 62.5%;
+  }
+  
+  body{
+    font-size: 1.6rem;
+    font-family: $font-ja;
+    color: $black;
+    background: $white;
+    @include sp{
+      font-size: $font-12;
+  }
+  }
+  
+  a{
+    color: $black;
+  }
+  
+  img{
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  

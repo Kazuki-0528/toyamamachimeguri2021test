@@ -1,0 +1,114 @@
+@mixin pc($width: 767px) {
+	@media screen and (min-width: $width) {
+		@content;
+	}
+}
+
+@mixin sp($width: 766px) {
+	@media screen and (max-width: $width) {
+		@content;
+	}
+}
+
+
+/*================event-item=======================*/ 
+
+@mixin event{
+    height: 0;
+    position: relative;
+    top: -100px;
+    left: 210px;
+    width: 140px;
+
+    @include sp{
+        height: 130px;
+        top: 0;
+        left: 0;
+        width: 180px;
+        margin: 0 auto;
+    }
+}
+
+@mixin event-c{
+    @include event;
+    padding-bottom: 40px;
+    left: 220px;
+    top: -60px;
+}
+@mixin event-d{
+    @include event;
+    left: 210px;
+    top: -120px;
+}
+@mixin event-e{
+    @include event;
+    padding-bottom: 30px;
+    left: 220px;
+    top: -80px;
+}
+@mixin event-f{
+    @include event;
+    left: 210px;
+    @include sp{
+        height: 150px
+    }
+}
+
+@mixin event-g{
+    @include event;
+    left: 210px;
+
+    @include sp{
+        top: 20px;
+    }
+}
+
+@mixin event-h{
+    @include event;
+    height: 20px;
+    left: 220px;
+    top: -80px;
+    padding-bottom: 30px
+}
+@mixin event-i{
+    @include event;
+    left: 210px;
+}
+@mixin event-j{
+    @include event;
+    left: 210px;
+    top: -120px;
+}
+@mixin event-k{
+    @include event;
+    left: 170px;
+    top: -160px;
+    width: 180px;
+    @include sp{
+        height: 150px
+    }
+}
+@mixin event-l{
+    @include event;
+    left: 210px;
+    @include sp{
+        height: 150px
+    }
+}
+
+
+@mixin item{
+    width: 280px;
+    border: solid 1px rgb(153, 135, 135);
+    font-weight: bold;
+    font-size: 1.4rem;
+    &:hover{
+        opacity: 0.5;
+    }
+    @include sp{
+        font-size: 1rem;
+        width: 250px;
+        margin-top: 1px;
+    }
+}
+

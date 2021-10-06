@@ -1,0 +1,55 @@
+.footer{
+    background: #cc9966;
+    color: $white;
+    height: 150px;
+
+    @include sp{
+        height: 120px;
+    }
+}
+
+.footer-inner{
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    @include sp{
+        flex-direction: column;
+        padding-top: 0;
+    }
+}
+
+.footer-title{
+    font-size: 4rem;
+    font-family: $font-nic;
+
+    @include sp{
+        font-size: 3rem;
+        margin-top: 5px;
+    }
+}
+
+.footer-text{
+    font-size: 1.8rem;
+    margin-top: 45px;
+    margin-left: auto;
+
+    @include sp{
+        font-size: 1.4rem;
+        margin-top: 0;
+        margin: 5px auto;
+        
+    }
+}
+
+.to-top{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.my-color{
+    color:#dfc9b4;
+    &:hover{
+        opacity: 0.7;
+    }
+}

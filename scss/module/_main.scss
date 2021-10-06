@@ -1,0 +1,11 @@
+.inner{
+    width: $layout-width-inner;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.br-pc{
+    @include sp{
+        display: none;
+    }
+}
